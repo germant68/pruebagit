@@ -1,0 +1,156 @@
+Git
+En el mundo del desarrollo se realizan cambios constantes sobre los proyectos actuales
+varias veces al dia.
+Git permite hacer un completo back-up de los archivos y compartirlos con tu equipo
+Es un software de control de versiones, que mantien eficientemente las actualizaciones
+sobre el codigo fuente
+Vas a poder tener un historal completo de versiones de un mismo archivos
+sin la necesidad de crear varias copias del mismo
+Se pueden compartir los archivos de forma facil y sencilla
+Se asemeja a google drive
+
+GitHub
+Almacenamiento en la nube. Se puede hacer lo mismo con los archivos de nuestros proyectos
+GitHub es mas funcional 
+Es un lugar en la nube, donde se hospedan los proyectos de programacion
+Podemos crear un repositorio, donde se almacenan los archivos
+1 proyecto es un repositorio
+Los repositorios que viven en GitHub son repositorios remotos
+Cada persona de tu equipo va a tener una copia de ese repositorio, a los cuales llamamos repositorios locales
+Para que git funcione bien es necesario crear un vincullo entre local y remotos
+
+Crear repositorio:
+Lo primero que hay que hacer es desde la terminal, ubicarnos en la carpeta
+y escribir el comando:
+git init 
+Vamos a recibir de la consola, que se ha inciado un repositorio vacio
+Lo que genera ese comando es un repositorio local en la carpeta donde tenemos los archivos
+Que inicialmente esta vacio, pq falta indicar q archivos queres agregar
+Un repositorio es un almacen de archivos, donde se van almacenando los archivos en pequeños
+paquetes que se llaman commits, cada uno tiene una fecha de creacion y un autor
+Van a ser nuestro historial de cambios que se fueron haciendo en el proyecto
+Por ello, antes de cualquier cosa, tenemos que decirle a git quien somos nostros
+En la terminal, parado en la carpeta correcta, escribimos el comando:
+git config user.name "mi-usuario"
+Tmb necesita saber el correo electronico con el que nos registramos en github
+git config user.email "miCorreo@gmail.com"
+
+Conectar el repositorio local con el repositorio remoto
+Previamente, crear un repositorio en git
+y escribir el comando:
+$ git remote add origin https://github.com/germant68/code-v.git
+
+
+
+Agregando archivos al repositorio
+Cada vez que agregamos archivos se graban en pequeños paquetes que se llaman:
+Commits: Tienen una marca de tiempo, firma del autor y asi dejan una marca de los cambios del proyecto
+Son los q nos permiten hacer un seguimiento y control sbre las versiones de nuestros archivos
+
+Como se agregan archivos al repositorio?
+Escribiendo un comando desde la terminal, (solo va a funcionar estando en una carpeta que tiene 
+un repositorio inicializado)
+comando: git add (indicarle los archivos que queremos agregar)
+git status (te dice el estado de los archivos y el estado de los mismos en orden al repositorio)
+git add nombrearchivo.js agrega un archivos
+git add . agrega todos los archivos
+
+
+commits - confirmacion a traves de la cual le decimos al repositorio q los archivos q fuimos agregando
+los deseamos oficialmente como un paquete de adiciones o modificaciones q tendran a su vez una marca indeleble
+de tiempo y estaran firmados por un autor
+
+Ejemplo: Cada vez que estamos en una instancia importante del proyecto, podemos crear un commit
+Si cometemos un error, podemos volver facilmente a la version anterior
+
+Para crear un commit hay que agregar los archivos modificados al repositorio
+y luego el comando:
+git commit - m + "un mensaje entre las comillas" (puede ser lo hecho hasta ese momento)
+
+Hasta aca, generamos un punto en la linea de tiempo de nuestro proyecto
+que tiene los archivos que hasta el momento agregaste al repositorio
+
+SUBIENDO archivos
+
+Como llevar los archivos del repositorio local al repositorio remoto?
+Antes de subir a github --> tener todo commiteado
+
+git necesita que le indiquemos que deseamos subir los archivos
+para eso usamos el comando:
+git push --> enviar los archivos que tenes en tu repositorio local al remoto
+git push origin master 
+significa q queres llevar los archivos del repositorio local al repositorio remoto
+Para git el repositorio remoto se llama origin
+Y q queres que se inserten los mismos en la rama principal, q se llama master
+
+
+
+Bajar los proyectos que tengamos en github en cualquier computadora del mundo
+
+Y como descargar cambios que pudiera haber hecho cualquier persona de nuestro equipo
+
+Esto se hace con un comando:
+git clone
+Que crea una copia exacta en la computadora de todos los archivos
+existentes en un repositorio remoto
+Necesita saber de cual es el repositorio remoto que queremos hacer una copia
+Va a ser la url exacta en la que se encuentran publicados los archivos
+
+Una vez que ejecute eso git va a descargar todos los archivos
+
+Hay que copiar el hipervinculo en git de clone
+Luego abrir en la terminal la carpeta y efecuar el comando:
+git clone y el hipervinculo
+y este comando se va a encargar de descargar todos los archivos en la carpeta
+Y esa carpeta, ya esta sincronizada con nuestro repositorio remoto en git
+
+Que sucedde, cuando trabajas en la maquina de tu trabajo, subis los archivos a github
+y luego queres descargar los mismos en tu computadora personal?
+O cuando otra persona subio cambios y queremos descargarlos?
+
+Como haces si ya ejecutasste dias antes git clone del proyecto en tu computadora?
+el comando que debes utilizar su llama:
+git pull
+no bajara nuevamente los archivos, solo los que hayan sufrido alguna modificaciones
+o alguno nuevo
+
+el comando es:
+git pull origin main 
+
+git pull origin master
+
+Puede estar el caso donde nosotros hicimos cambios y nuestrso compañeros tambien
+pero si estuvimos trabajando en el mismo archivo, en el mismo lugar, git no siempre sabe solucionarlo
+En este caso, git va a indicarnos si tenemos conflictos y como solucionarlos
+En caso de haber conflicto, debemos modificar el archivo manualmente y luego hacer un commit
+
+
+Resolucion de conflictos:
+Estamos trabajando en el archivo principal de una pagina, en el archivo index.html
+Al mismo tiempo, otro miembro del equipo decide hacer una modificacion en ese mismo archivo
+y ella sube los cambios primeros
+Minutos despues, cuando terminas tus cambios y haces el push, recibimos un error
+Entonces, tenemos que traernos esos cambios que hizo nuestro compañero antes
+comando: git pull origin master
+Otro error, que nos va a decir que git quiso unificar los cambios y fallo
+En nuestro editor, nos va a preguntar si dejamos neustros cambios, los del compañero o hacemos un nuevo archivo
+En VS code nos deja resolver el conficto con un solo click
+Para algunos conflictos git los resuelve de forma instantanea
+Una vez que haytamos quedado conformes con el cambio vamos a repetir el proceso como si  se tratara de un nuevo cambio
+Un nuevo commit
+y va a ser necesario agregar el archivo de nuevo con add
+un commit
+y subirlo finalmente con un nuevo push
+Una forma de evitar conflictos es realizar commit pequeños y subirlos al servidor de manera frecuente
+Otra forma es el uso de ramas para trabajar en paralelo a la version principal del codigo
+
+
+
+
+
+
+
+
+
+
+

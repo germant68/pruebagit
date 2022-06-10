@@ -1,0 +1,54 @@
+Git
+
+Trabajo colaborativo
+Git nos ayuda al trabajo colaborativo, es un programa de control de versiones
+Me permite controlar las versiones que yo voy haciendo de mi proyecto
+Cuando instalamos algo en la pc nos viene una version,
+Que cada tanto salta alguna actualizacion
+Esto tambien se aplica a cuando estamos trabajando un proyecto
+Hay distintas versiones, para controlar que funcionalidades tenia el proyecto
+Que funcionalidades tiene y que funcionalidades puede tener
+
+
+Git no es lo mismo que github
+Cuando trabajamos con git siempre trabajamos desde la consola pq son comandos
+
+Si yo rompo el codigo, con git siempre tengo la chance de volver una version para atras
+
+
+Marcamos en la linea de tiempo las distintas versiones, 
+Fue desarrollado por la misma persona que creo linux
+Por eso en linux viene instalado, en windows hay que instalarlo aparte
+El programa controla las versiones
+
+
+Para abrir la consola
+comand 
+Ir actualizando git cada dos o tres meses desde la pagina
+git --version para ver la version de git en la consola
+
+
+
+Para abrir una carpeta en la consola escribimos
+cd y arrastro la carpeta
+automaticamente la consola de git se va a posicionar en ese directorio
+Luego hay que inicializar el repositorio
+Vamos a inicializar un proyecto en node y un proyecto en git
+
+con el comando: code .
+me va a abrir esa carpeta en visual
+
+En esa carpeta, tengo 4 archivos js, que le quiero emepzar a poner un control de version
+Tendria que inicializarlo como un repositorio de git
+
+Tenemos cuenta en github
+Subir proyectos a github
+La extension liveshare es conveniente hacerla con zoom o meet 
+
+Para iniciar, se puede hacer a traves de la console de visual o de la consola de gitbash
+Tengo que estar posicionado en la carpeta donde lo voy a inicializar
+
+En VS, en las ramitas, me dice los cambios pendientes que tengo dsp de darle git init
+Que significa que hay archivos que no estan siendo controlados ni seguidos
+
+git add para agregar archivos
