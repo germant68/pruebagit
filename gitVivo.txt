@@ -52,3 +52,32 @@ En VS, en las ramitas, me dice los cambios pendientes que tengo dsp de darle git
 Que significa que hay archivos que no estan siendo controlados ni seguidos
 
 git add para agregar archivos
+
+configurar el usuario y el email
+git config user.name
+git config user.mail
+
+git commit - quiere decir que todo lo que esta vamos a levnatarlo para llevarlo a la nube 
+
+eso es commitear
+
+pushear es empujar todo eso a un repositorio git
+
+Para eso, antes debo crear mi repositorio en github
+
+No tildar la opcion read.me
+Me va a dar la url y me va a decir que poner en la consola
+
+En parentesis me va a decir la rama, master es la rama principal
+la crea automaticamente git
+Si queremos main, antes del git commit ponemos git brunch - M main
+
+Ahora tengo linkeado mi repo local con mi repo en la nube
+
+orden:
+git status Para saber en q estado estoy
+git add . para todo o solo el archivo
+git commit-m"mensaje"
+git push (no hace falta el origin master para actualizar)
+
+
