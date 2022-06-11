@@ -80,4 +80,6 @@ git add . para todo o solo el archivo
 git commit-m"mensaje"
 git push (no hace falta el origin master para actualizar)
 
+s
+
 
