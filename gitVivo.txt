@@ -80,6 +80,48 @@ git add . para todo o solo el archivo
 git commit-m"mensaje"
 git push (no hace falta el origin master para actualizar)
 
-s
+Puedo crear nuevas ramas e ir clonando el repo en esas ramas
+Normalmente nunca se trabaja en master
+de la rama master sale una depp
+de esa rama sale una rama testing
+Entonces vamos pusheando de rama en rama
+y la rama master la toca una sola persona
+Desarrolladores pasa a testing
+Testing pasa a produccion
+y produccion levnata
+
+En git
+en code me aparece un link del enlace a mi repo
+
+Clone:
+Pararme desde la consola en la carpeta que quiero tener los archivos
+git clone link del repo
+y se clonan los archivos en una maquina nueva 
+
+Tengo un repositorio clonado en maquinaDelTrabajo, simulando ser otra computadora
+
+Archivo readme
+
+add a Readme en git
+commit new file 
+y sube un archivo read.me
+hace un read me del repositorio
+que dice quien lo hizo, si hay que tener instalado algo, y distintas caracteristicas, etc 
+
+Las empresas buscan que se sepa controlar un sistema de control de version, en este caso es github
+Gitlab
+Azure
+
+git pull es para bajar actualizaciones, o tomar version
+Si yo empiezo mi dia laboral, tomo version antes de empezar a trabajar
+Es iportante hacer el git pull antes
+si lo hago dsp de tocar el codigo, se rompe abajo
+
+Hay que ver en que rama estamos parados, 
+para hacer el git push origin master o origin main
+
+
+
+
 
 
